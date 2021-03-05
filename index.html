@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather For You!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container shadow p-4  bg-body rounded mt-5">
+        <div class="container" id="input">
+            <h1 class="display-4 text-center text-light">Your Weather App</h1>
+            <div class="row d-flex justify-content-center">
+                <form id="zip" class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" name="zipInput" placeholder="Enter Zipcode">
+                    <button class="btn btn-warning my-2 my-sm-5" type="submit">Get Weather</button>
+                </form>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 offset-md-4">
+                    <div class="card text-center">
+                        <h5 class="card-header">City</h5>
+                        <div class="card-body">
+                            <p id="town" class="card-text">Town</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 col-sm-12 col-md-4 offset-md-4">
+                    <div class="card text-center">
+                        <h5 class="card-header">Temperature</h5>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col border-right">
+                                    <p id="kelvin" class="card-text">Kelvin</p>
+                                </div>
+                                <div class="col border-right">
+                                    <p id="imperial" class="card-text">Fahrenheit</p>
+                                </div>
+                                <div class="col">
+                                    <p id="metric" class="card-text">Celsius</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 col-sm-12 col-md-4 offset-md-4">
+                    <div class="card text-center">
+                        <h5 class="card-header">Current Condition</h5>
+                        <div class="card-body">
+                            <p id="wind" class="card-text">Wind Speed:</p>
+                            <p id="condition" class="card-text">Condition:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 col-sm-12 col-md-4 offset-md-4">
+                    <div class="card text-center">
+                        <h5 class="card-header">Current Weather</h5>
+                        <div class="card-body">
+                            <img id="pic" class="card-image-bottom" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script src="/js/java.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
